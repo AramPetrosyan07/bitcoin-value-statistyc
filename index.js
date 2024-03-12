@@ -34,11 +34,11 @@ const addDB = async () => {
   return user;
 };
 
-// async function myFunction() {
-//   let idk = await addDB();
-//   console.log(idk);
-// }
-// setInterval(myFunction, 10000);
+async function myFunction() {
+  let idk = await addDB();
+  console.log(idk);
+}
+setInterval(myFunction, 10000);
 
 app.get("/bitcoin-value", async (req, res) => {
   try {
